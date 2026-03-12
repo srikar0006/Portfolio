@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #1d2021;
+    background-image:
+        linear-gradient(rgba(131, 165, 152, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(131, 165, 152, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: #ebdbb2;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #282828;
+    border-bottom: 1px solid #504945;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .nav-brand {
+    font-family: monospace;
+    color: #b8bb26;
+    font-size: 1rem;
+    padding: 16px 0;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+nav ul li a {
+    color: #ebdbb2;
+    text-decoration: none;
+    padding: 18px 16px;
+    display: block;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #83a598;
+    border-bottom-color: #83a598;
+}
+
+/* Hero Section */
+header {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #282828, #1d2021);
+}
+
+header h1 { font-size: 4rem; margin-bottom: 10px; }
+header p { color: #b8bb26; font-family: monospace; font-size: 1.2rem; }
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: -50px auto 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Section styling */
+div.section {
+    background-color: #282828;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #504945;
+}
+
+h2 { margin-bottom: 25px; border-left: 5px solid #83a598; padding-left: 15px; }
+
+/* Skill Badges */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.skill-list span {
+    background-color: #3c3836;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #504945;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    max-width: fit-content;
+}
+
+.skill-list span:hover {
+    border-color: #83a598;
+    transform: translateY(-3px);
+    color: #83a598;
+}
+
+/* Flexbox Cards */
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background: #3c3836;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 280px;
+    border-top: 4px solid #83a598;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h3 { color: #83a598; margin-bottom: 10px; }
+
+/* Contact Bar */
+.contact-bar {
+    background: #83a598;
+    color: #1d2021;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-bar a {
+    color: #1d2021;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #1d2021;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    color: #7c6f64;
+}
+
+#projects .flex-group {
+    display: flex;
+    flex-direction: column;
+}
